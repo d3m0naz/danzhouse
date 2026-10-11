@@ -1,0 +1,6 @@
+# Blender-Backups
+*.blend1
+*.blend[2-9]
+
+# macOS
+.DS_Store
