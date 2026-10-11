@@ -54,6 +54,12 @@
   }
   .button:hover, .button:focus-visible { filter: brightness(1.1); }
   .small { font-size: 14px; color: var(--muted); }
+  .table-wrap { overflow-x: auto; margin: 0 0 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 16px; }
+  th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+  th { font-size: 14px; font-weight: 600; color: var(--muted); }
+  td.num, th.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  tfoot td { font-weight: 600; border-bottom: 0; }
   .repo {
     display: flex; align-items: center; gap: 14px; margin: 0 0 28px; padding: 14px 18px;
     background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
@@ -98,6 +104,31 @@
   <p>Die Projektdatei für Bambu Studio enthält alle drei Teile auf je einer Druckplatte, eingestellt für den Bambu Lab P1S und fertig gesliced.</p>
   <p><a class="button" href="https://github.com/d3m0naz/danzhouse/releases/download/v0.9/Haus_M1-60_P1S_Projekt.3mf">Druckdatei herunterladen</a></p>
   <p class="small">Haus_M1-60_P1S_Projekt.3mf · 24 MB · <a href="https://github.com/d3m0naz/danzhouse/blob/main/3D/Bambu_Lab_P1S_ohne_Terrasse/Druckanleitung_Haus_M1-60_P1S.pdf">Druckanleitung (PDF)</a></p>
+
+  <h2>Leichter gedruckt</h2>
+  <p>Die erste Fassung brauchte rund 985 g PLA und 30 Stunden. Zwei Änderungen am Modell haben das auf etwa 820 g und 27,5 Stunden gesenkt, ohne dass sich das Haus von außen verändert hat.</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Maßnahme</th><th class="num">vorher</th><th class="num">nachher</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Dach hohl statt massiv.</strong> Die Dachhaut ist innen auf 2 mm ausgedünnt; drei Querstege und ein Steg unter dem First halten sie stabil.</td>
+          <td class="num">376 g</td><td class="num">250 g</td>
+        </tr>
+        <tr>
+          <td><strong>Sockel im Erdgeschoss hohl.</strong> Statt einer massiven Platte von 10 mm trägt ein Raster aus Stegen eine dünne Bodenplatte von 1,2 mm.</td>
+          <td class="num">343 g</td><td class="num">294 g</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr><td>Alle drei Teile zusammen</td><td class="num">ca. 985 g</td><td class="num">ca. 820 g</td></tr>
+      </tfoot>
+    </table>
+  </div>
+  <p>Damit der Slicer den hohlen Sockel nicht wieder auffüllt, sind die Stützen beim Erdgeschoss ausgeschaltet.</p>
+  <p class="small">Die Druckdaten wurden mit Hilfe eines Sprachmodells (LLM) erzeugt und Schritt für Schritt verbessert. Die Gewichte und Zeiten sind Werte aus dem Slicer.</p>
 
   <h2>Blender-Dateien</h2>
   <div class="note">
