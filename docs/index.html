@@ -40,6 +40,7 @@
   figure { margin: 0 0 32px; }
   figure img { display: block; width: 100%; height: auto; border-radius: 10px; }
   figcaption { margin-top: 8px; font-size: 14px; color: var(--muted); }
+  video { display: block; width: 100%; height: auto; border-radius: 10px; background: #000; }
   h2 { margin: 40px 0 12px; font-size: 24px; }
   p { margin: 0 0 14px; }
   a { color: var(--accent); }
@@ -91,6 +92,15 @@
   <figure>
     <img src="ansicht.jpg" width="1600" height="900" alt="Gerendertes Haus mit rotem Dach und hellem Putz in einem Garten mit Bäumen, von Südwesten gesehen">
     <figcaption>Ansicht von Südwesten, gerendert in Blender.</figcaption>
+  </figure>
+
+  <h2>Drohnenflug durchs Haus</h2>
+  <figure>
+    <video controls playsinline preload="metadata" poster="drohnenflug.jpg" width="568" height="320">
+      <source src="drohnenflug.mp4" type="video/mp4">
+      Dein Browser kann das Video nicht abspielen. <a href="drohnenflug.mp4">Video herunterladen</a>
+    </video>
+    <figcaption>Kameraflug durch Erdgeschoss und Obergeschoss, 60 Sekunden, ohne Ton. Vorschau in niedriger Auflösung.</figcaption>
   </figure>
 
   <h2>3D-Druck</h2>
