@@ -2,9 +2,9 @@
 
 3D-Modell eines Einfamilienhauses (Bj. ca. 1950) in Blender, mit Druckdaten für ein stapelbares Modell aus drei Teilen.
 
-- **Version:** 0.9
+- **Version:** 0.9.1
 - **Software:** Blender 5.2.2 LTS, Bambu Studio
-- **Stand:** 11.10.2026
+- **Stand:** 12.10.2026
 - **Dokumentation:** [DOKUMENTATION.md](DOKUMENTATION.md)
 - **Website:** https://d3m0naz.github.io/danzhouse/
 

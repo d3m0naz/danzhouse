@@ -1,6 +1,6 @@
 # Dokumentation Hausmodell
 
-Stand: 11.10.2026
+Stand: 12.10.2026
 
 ## Überblick
 
@@ -20,7 +20,7 @@ Alle Dateien wurden mit Blender 5.2.2 LTS erstellt.
 | `haus_eg.blend` | nur das Erdgeschoss, ohne Decke | Blick in die Räume |
 | `haus_og.blend` | nur das Obergeschoss, ohne Decke | Blick in die Räume |
 
-`haus.blend` enthält drei Szenen: `Scene` für Außenansichten sowie `Drohnenflug` und `Rundflug` für die Kamerafahrten.
+`haus.blend` enthält vier Szenen: `Scene` für Außenansichten sowie `Drohnenflug`, `Drohnenflug_2` und `Rundflug` für die Kamerafahrten. `Drohnenflug_2` ist der neueste Flug: einmal ums Haus, durch die Terrassentür, durch beide Geschosse und zum Südfenster wieder hinaus (54 Sekunden).
 
 Das Haus ist in allen fünf Dateien auf demselben Stand. Wer etwas am Haus ändert, sollte die Änderung in allen fünf Dateien nachziehen.
 
