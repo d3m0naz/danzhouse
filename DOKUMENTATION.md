@@ -76,7 +76,7 @@ Das Modell besteht aus drei Teilen, die übereinander gesteckt werden: Erdgescho
 | `3D/Bambu_Lab_P1S/` | 1:60 | Bambu Lab P1S | mit Terrasse, Dach und Sockel noch massiv |
 | `3D/Bambu_Lab_A2L/` | 1:50 | Bambu Lab A2L | Altstand vom 10.10.2026 |
 
-Jeder Ordner enthält die drei Teile als STL, eine Blender-Datei mit den Druckteilen und eine Druckanleitung als PDF. `Haus_M1-50_A2L.stl` im Hauptordner gehört zum Altstand.
+Jeder Ordner enthält die drei Teile als STL, eine Blender-Datei mit den Druckteilen und eine Druckanleitung als PDF. Im Ordner 1:90 liegt statt der Blender-Datei das Skript `erzeuge_1-90.py`, das die drei Teile aus dem Set 1:60 erzeugt. `Haus_M1-50_A2L.stl` im Hauptordner gehört zum Altstand.
 
 ### Aktuelles Druckset
 
@@ -100,6 +100,22 @@ Einstellungen der Projektdatei:
 Dach und Sockel des Erdgeschosses sind bei diesem Set hohl, das spart Material und Druckzeit. Die Stützen sind beim Erdgeschoss ausgeschaltet, weil der Slicer sonst den hohlen Sockel füllt.
 
 Weitere Hinweise zum Drucken und Zusammenstecken stehen in der Druckanleitung im jeweiligen Ordner.
+
+### Druckteile prüfen
+
+`3D/pruefe_druckteile.py` prüft die Teile eines Sets:
+
+- Topologie: wasserdicht, offene und nicht-mannigfaltige Kanten, Anzahl der Körper
+- Wandstärke: Anteil der Fläche unter 1,0, 1,2 und 1,6 mm sowie die dünnsten Stellen
+- Stifte und Löcher: Durchmesser, Höhe bzw. Tiefe und Wand ums Loch; die Stiftmitten findet das Skript selbst
+
+Aufruf aus dem Hauptordner:
+
+```
+python3 3D/pruefe_druckteile.py 3D/Bambu_Lab_P1S_ohne_Terrasse/Haus_M1-60_*.stl
+```
+
+Das Skript braucht numpy, trimesh und rtree und ist mit Python 3.14 getestet.
 
 ## Bekannte Einschränkungen
 
