@@ -72,7 +72,7 @@ Das Modell besteht aus drei Teilen, die übereinander gesteckt werden: Erdgescho
 | Ordner | Maßstab | Drucker | Stand |
 |---|---|---|---|
 | `3D/Bambu_Lab_P1S_ohne_Terrasse/` | 1:60 | Bambu Lab P1S | aktuell |
-| `3D/Bambu_Lab_P1S_ohne_Terrasse_1-90/` | 1:90 | Bambu Lab P1S | 67 % des Sets 1:60, Wände verstärkt (mind. 1,2 mm), Stifte Ø 2,6 mm, Löcher Ø 3,0 mm; nur STL, noch nicht gesliced |
+| `3D/Bambu_Lab_P1S_ohne_Terrasse_1-90/` | 1:90 | Bambu Lab P1S | 67 % des Sets 1:60, Wände verstärkt (mind. 1,2 mm), Stifte Ø 2,6 mm, Löcher Ø 3,0 mm; STL und Druckanleitung, noch nicht gesliced |
 | `3D/Bambu_Lab_P1S/` | 1:60 | Bambu Lab P1S | mit Terrasse, Dach und Sockel noch massiv |
 | `3D/Bambu_Lab_A2L/` | 1:50 | Bambu Lab A2L | Altstand vom 10.10.2026 |
 
