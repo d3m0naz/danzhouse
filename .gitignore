@@ -4,3 +4,6 @@
 
 # macOS
 .DS_Store
+
+# Video-Renders im Hauptordner (die Website-Fassung liegt in docs/)
+/Drohnenflug_*.mp4
