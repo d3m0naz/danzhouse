@@ -15,7 +15,7 @@ Alle Dateien wurden mit Blender 5.2.2 LTS erstellt.
 | Datei | Inhalt | Wofür |
 |---|---|---|
 | `haus.blend` | Haus mit Umgebung: Straße, Zaun, Bäume, Nachbarhäuser, Hügel | Außenansichten und Kameraflüge |
-| `haus_light.blend` | Haus ohne Umgebung | Grundlage für das Druckset mit Terrasse |
+| `haus_light.blend` | Haus ohne Umgebung | Ansichten des ganzen Hauses mit Terrasse |
 | `haus_light_ohne_terrasse.blend` | Haus ohne Umgebung, Terrasse, Terrassenstufe und Kelleraußentreppe | Grundlage für das aktuelle Druckset |
 | `haus_eg.blend` | nur das Erdgeschoss, ohne Decke | Blick in die Räume |
 | `haus_og.blend` | nur das Obergeschoss, ohne Decke | Blick in die Räume |
@@ -73,10 +73,10 @@ Das Modell besteht aus drei Teilen, die übereinander gesteckt werden: Erdgescho
 |---|---|---|---|
 | `3D/Bambu_Lab_P1S_ohne_Terrasse/` | 1:60 | Bambu Lab P1S | aktuell |
 | `3D/Bambu_Lab_P1S_ohne_Terrasse_1-90/` | 1:90 | Bambu Lab P1S | 67 % des Sets 1:60, Wände verstärkt (mind. 1,2 mm), Stifte Ø 2,6 mm, Löcher Ø 3,0 mm; mit Projektdatei (ca. 17 h, ca. 390 g) und Druckanleitung |
-| `3D/Bambu_Lab_P1S/` | 1:60 | Bambu Lab P1S | mit Terrasse, Dach und Sockel noch massiv |
-| `3D/Bambu_Lab_A2L/` | 1:50 | Bambu Lab A2L | Altstand vom 10.10.2026 |
 
-Jeder Ordner enthält die drei Teile als STL, eine Blender-Datei mit den Druckteilen und eine Druckanleitung als PDF. Im Ordner 1:90 liegt statt der Blender-Datei das Skript `erzeuge_1-90.py`, das die drei Teile aus dem Set 1:60 erzeugt. `Haus_M1-50_A2L.stl` im Hauptordner gehört zum Altstand.
+Jeder Ordner enthält die drei Teile als STL, eine Blender-Datei mit den Druckteilen und eine Druckanleitung als PDF. Im Ordner 1:90 liegt statt der Blender-Datei das Skript `erzeuge_1-90.py`, das die drei Teile aus dem Set 1:60 erzeugt.
+
+Die älteren Drucksets – 1:60 mit Terrasse (`3D/Bambu_Lab_P1S/`) und 1:50 für den Bambu Lab A2L (`3D/Bambu_Lab_A2L/`, `Haus_M1-50_A2L.stl`) – wurden am 19.10.2026 entfernt. Sie sind in der Git-Historie und im Quellcode-Archiv von Release 0.9.2 noch enthalten.
 
 ### Aktuelles Druckset
 
@@ -136,6 +136,5 @@ Das Skript braucht reportlab, pillow und trimesh, `blender` im Pfad und die Schr
 ## Bekannte Einschränkungen
 
 - Das Bild im README stammt vom 04.10.2026 und zeigt noch die alte Haustür.
-- Das Druckset mit Terrasse hat keine Projektdatei für Bambu Studio.
 - Die Wandschränke im Obergeschoss sind im Text der Druckanleitungen nicht erwähnt.
 - Das Set 1:90 wurde am 18.10.2026 aus den 1:60-Teilen vor der Verstärkung erzeugt. Ein neuer Lauf von `erzeuge_1-90.py` würde die verstärkten Teile verwenden.
