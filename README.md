@@ -8,6 +8,7 @@
 [![Blender 5.2.2 LTS](https://img.shields.io/badge/Blender-5.2.2%20LTS-e87d0d?logo=blender&logoColor=white)](https://www.blender.org/)
 [![Bambu Lab P1S](https://img.shields.io/badge/Drucker-Bambu%20Lab%20P1S-2f3a45)](https://bambulab.com/)
 [![Maßstab 1:60 und 1:90](https://img.shields.io/badge/Ma%C3%9Fstab-1%3A60%20%C2%B7%201%3A90-66727e)](#3d-druck)
+[![Lizenz CC BY-NC 4.0](https://img.shields.io/badge/Lizenz-CC%20BY--NC%204.0-lightgrey)](LICENSE)
 
 [**Website**](https://d3m0naz.github.io/danzhouse/) ·
 [**Downloads**](https://github.com/d3m0naz/danzhouse/releases/tag/v0.9.2) ·
@@ -175,6 +176,14 @@ Voraussetzungen und Details stehen in der [Dokumentation](DOKUMENTATION.md#druck
 ## Entstehung
 
 Das Modell entstand in Blender, die Druckdaten wurden mit Hilfe des Sprachmodells Claude erzeugt und Schritt für Schritt verbessert: Dach und Sockel wurden hohl, dünne Stellen an Treppe und Traufkästen verstärkt, und aus dem Set 1:60 entstand die kleinere Variante 1:90.
+
+## Lizenz
+
+Das Hausmodell steht unter der Lizenz [Creative Commons Namensnennung – Nicht kommerziell 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/deed.de). Den vollständigen Lizenztext enthält die Datei [LICENSE](LICENSE).
+
+- **Erlaubt:** drucken, verändern, weitergeben und darauf aufbauen
+- **Bedingung:** den Urheber nennen (d3m0naz, mit Link auf dieses Repository) und angeben, ob etwas verändert wurde
+- **Nicht erlaubt:** kommerzielle Nutzung, etwa der Verkauf von Drucken oder Dateien
 
 <br>
 
