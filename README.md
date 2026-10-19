@@ -8,7 +8,7 @@
 - **Dokumentation:** [DOKUMENTATION.md](DOKUMENTATION.md)
 - **Website:** https://d3m0naz.github.io/danzhouse/
 
-![Ansicht Südwest](Ansicht_Suedwest_FullHD.png)
+![Ansicht von Nordosten mit Haustür](Ansicht_Nordost_FullHD.png)
 
 ## Inhalt
 

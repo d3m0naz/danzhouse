@@ -135,6 +135,5 @@ Das Skript braucht reportlab, pillow und trimesh, `blender` im Pfad und die Schr
 
 ## Bekannte Einschränkungen
 
-- Das Bild im README stammt vom 04.10.2026 und zeigt noch die alte Haustür.
 - Die Wandschränke im Obergeschoss sind im Text der Druckanleitungen nicht erwähnt.
 - Das Set 1:90 wurde am 18.10.2026 aus den 1:60-Teilen vor der Verstärkung erzeugt. Ein neuer Lauf von `erzeuge_1-90.py` würde die verstärkten Teile verwenden.
