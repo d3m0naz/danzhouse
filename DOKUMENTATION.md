@@ -85,9 +85,9 @@ Im Ordner `3D/Bambu_Lab_P1S_ohne_Terrasse/` liegt zusätzlich `Haus_M1-60_P1S_Pr
 | Teil | Größe | Druckzeit | Material |
 |---|---|---|---|
 | Erdgeschoss | 201 × 177 × 60 mm | 8 h 55 min | 294 g |
-| Obergeschoss | 201 × 160 × 48 mm | 8 h 56 min | 275 g |
-| Dach | 209 × 174 × 81 mm | 9 h 37 min | 251 g |
-| Zusammen | Höhe ca. 19 cm | ca. 27,5 h | ca. 820 g |
+| Obergeschoss | 201 × 160 × 48 mm | 9 h 01 min | 277 g |
+| Dach | 209 × 174 × 81 mm | 9 h 13 min | 246 g |
+| Zusammen | Höhe ca. 19 cm | ca. 27 h | ca. 820 g |
 
 Einstellungen der Projektdatei:
 
@@ -98,6 +98,11 @@ Einstellungen der Projektdatei:
 - Material Bambu PLA Basic
 
 Dach und Sockel des Erdgeschosses sind bei diesem Set hohl, das spart Material und Druckzeit. Die Stützen sind beim Erdgeschoss ausgeschaltet, weil der Slicer sonst den hohlen Sockel füllt.
+
+Am 19.10.2026 wurden zwei zu dünne Stellen verstärkt, beide als zusätzlicher Körper im Teil (`verstaerke_1-60.py`):
+
+- Raumspar-Bodentreppe im Obergeschoss: Wangen und Stufen waren 0,2–0,7 mm stark, jetzt mindestens 1,2 mm.
+- Traufkästen am Dach: Der Boden war 0,34 mm stark und lag 0,45 mm über der Druckplatte. Die Kästen sind jetzt ausgefüllt und stehen auf der Platte, ihre Enden an den Dachecken sind geschlossen.
 
 Weitere Hinweise zum Drucken und Zusammenstecken stehen in der Druckanleitung im jeweiligen Ordner.
 
@@ -122,3 +127,5 @@ Das Skript braucht numpy, trimesh und rtree und ist mit Python 3.14 getestet.
 - Das Bild im README stammt vom 04.10.2026 und zeigt noch die alte Haustür.
 - Das Druckset mit Terrasse hat keine Projektdatei für Bambu Studio.
 - Die Wandschränke im Obergeschoss sind im Text der Druckanleitungen nicht erwähnt.
+- Die Druckanleitung 1:60 nennt noch die Druckzeiten vor der Verstärkung vom 19.10.2026 (Dach 9 h 37 min / 251 g, OG 8 h 56 min / 275 g, zusammen 27,5 h).
+- Das Set 1:90 wurde am 18.10.2026 aus den 1:60-Teilen vor der Verstärkung erzeugt. Ein neuer Lauf von `erzeuge_1-90.py` würde die verstärkten Teile verwenden.
