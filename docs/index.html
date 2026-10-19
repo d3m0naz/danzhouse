@@ -85,6 +85,20 @@
   }
   .button:hover, .button:focus-visible { filter: brightness(1.1); }
   .small { font-size: 14px; color: var(--muted); }
+  .teile { margin: 0 0 20px; border-bottom: 1px solid var(--line); }
+  .teile summary {
+    display: flex; align-items: center; gap: 10px; padding: 10px 0;
+    font-size: 15px; color: var(--muted); cursor: pointer; list-style: none;
+  }
+  .teile summary::-webkit-details-marker { display: none; }
+  .teile summary::before {
+    content: ""; width: 7px; height: 7px; margin: 0 3px;
+    border-right: 2px solid var(--accent); border-bottom: 2px solid var(--accent);
+    transform: rotate(-45deg); transition: transform .2s;
+  }
+  .teile[open] summary::before { transform: rotate(45deg); }
+  .teile summary:hover, .teile summary:focus-visible { color: var(--text); }
+  .teile .small { margin-top: 4px; }
   .table-wrap { overflow-x: auto; margin: 0 0 14px; }
   table { width: 100%; border-collapse: collapse; font-size: 16px; }
   th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
@@ -148,22 +162,25 @@
     <li><strong>ca. 27 h</strong><span>Druckzeit</span></li>
     <li><strong>ca. 820 g</strong><span>PLA</span></li>
   </ul>
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr><th>Teil</th><th class="num">Druckzeit</th><th class="num">PLA</th><th class="num">Filament</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Erdgeschoss</td><td class="num">8 h 55 min</td><td class="num">294 g</td><td class="num">97 m</td></tr>
-        <tr><td>Obergeschoss</td><td class="num">9 h 01 min</td><td class="num">277 g</td><td class="num">91 m</td></tr>
-        <tr><td>Dach</td><td class="num">9 h 13 min</td><td class="num">246 g</td><td class="num">81 m</td></tr>
-      </tbody>
-      <tfoot>
-        <tr><td>Alle drei Teile zusammen</td><td class="num">27 h 09 min</td><td class="num">817 g</td><td class="num">270 m</td></tr>
-      </tfoot>
-    </table>
-  </div>
-  <p class="small">Werte aus Bambu Studio für Bambu PLA Basic mit 0,4-mm-Düse.</p>
+  <details class="teile">
+    <summary>Druckzeit und Material je Teil</summary>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Teil</th><th class="num">Druckzeit</th><th class="num">PLA</th><th class="num">Filament</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Erdgeschoss</td><td class="num">8 h 55 min</td><td class="num">294 g</td><td class="num">97 m</td></tr>
+          <tr><td>Obergeschoss</td><td class="num">9 h 01 min</td><td class="num">277 g</td><td class="num">91 m</td></tr>
+          <tr><td>Dach</td><td class="num">9 h 13 min</td><td class="num">246 g</td><td class="num">81 m</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td>Alle drei Teile zusammen</td><td class="num">27 h 09 min</td><td class="num">817 g</td><td class="num">270 m</td></tr>
+        </tfoot>
+      </table>
+    </div>
+    <p class="small">Werte aus Bambu Studio für Bambu PLA Basic mit 0,4-mm-Düse.</p>
+  </details>
   <p>Die Projektdatei für Bambu Studio enthält alle drei Teile auf je einer Druckplatte, eingestellt für den Bambu Lab P1S und fertig gesliced.</p>
   <p><a class="button" href="https://github.com/d3m0naz/danzhouse/releases/download/v0.9.2/Haus_M1-60_P1S_Projekt.3mf">Druckdatei herunterladen</a></p>
   <p class="small">Haus_M1-60_P1S_Projekt.3mf · 24 MB · <a href="https://github.com/d3m0naz/danzhouse/tree/main/3D/Bambu_Lab_P1S_ohne_Terrasse">STL-Dateien</a> · <a href="https://github.com/d3m0naz/danzhouse/blob/main/3D/Bambu_Lab_P1S_ohne_Terrasse/Druckanleitung_Haus_M1-60_P1S.pdf">Druckanleitung (PDF)</a></p>
@@ -176,50 +193,30 @@
     <li><strong>ca. 17 h</strong><span>Druckzeit</span></li>
     <li><strong>ca. 390 g</strong><span>PLA</span></li>
   </ul>
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr><th>Teil</th><th class="num">Druckzeit</th><th class="num">PLA</th><th class="num">Filament</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Erdgeschoss</td><td class="num">6 h 11 min</td><td class="num">147 g</td><td class="num">48 m</td></tr>
-        <tr><td>Obergeschoss</td><td class="num">5 h 24 min</td><td class="num">124 g</td><td class="num">41 m</td></tr>
-        <tr><td>Dach</td><td class="num">5 h 19 min</td><td class="num">120 g</td><td class="num">40 m</td></tr>
-      </tbody>
-      <tfoot>
-        <tr><td>Alle drei Teile zusammen</td><td class="num">16 h 54 min</td><td class="num">391 g</td><td class="num">129 m</td></tr>
-      </tfoot>
-    </table>
-  </div>
-  <p class="small">Werte aus Bambu Studio für Bambu PLA Basic mit 0,4-mm-Düse.</p>
+  <details class="teile">
+    <summary>Druckzeit und Material je Teil</summary>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Teil</th><th class="num">Druckzeit</th><th class="num">PLA</th><th class="num">Filament</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Erdgeschoss</td><td class="num">6 h 11 min</td><td class="num">147 g</td><td class="num">48 m</td></tr>
+          <tr><td>Obergeschoss</td><td class="num">5 h 24 min</td><td class="num">124 g</td><td class="num">41 m</td></tr>
+          <tr><td>Dach</td><td class="num">5 h 19 min</td><td class="num">120 g</td><td class="num">40 m</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td>Alle drei Teile zusammen</td><td class="num">16 h 54 min</td><td class="num">391 g</td><td class="num">129 m</td></tr>
+        </tfoot>
+      </table>
+    </div>
+    <p class="small">Werte aus Bambu Studio für Bambu PLA Basic mit 0,4-mm-Düse.</p>
+  </details>
   <p>Die Projektdatei für Bambu Studio enthält alle drei Teile auf je einer Druckplatte, eingestellt für den Bambu Lab P1S und fertig gesliced.</p>
   <p><a class="button" href="https://github.com/d3m0naz/danzhouse/releases/download/v0.9.2/Haus_M1-90_P1S_Projekt.3mf">Druckdatei 1:90 herunterladen</a></p>
   <p class="small">Haus_M1-90_P1S_Projekt.3mf · 26 MB · <a href="https://github.com/d3m0naz/danzhouse/tree/main/3D/Bambu_Lab_P1S_ohne_Terrasse_1-90">STL-Dateien</a> · <a href="https://github.com/d3m0naz/danzhouse/blob/main/3D/Bambu_Lab_P1S_ohne_Terrasse_1-90/Druckanleitung_Haus_M1-90_P1S.pdf">Druckanleitung (PDF)</a></p>
 
-  <h2>Leichter gedruckt</h2>
-  <p>Die erste Fassung brauchte rund 985 g PLA und 30 Stunden. Zwei Änderungen am Modell haben das auf etwa 820 g und 27,5 Stunden gesenkt, ohne dass sich das Haus von außen verändert hat.</p>
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr><th>Maßnahme</th><th class="num">vorher</th><th class="num">nachher</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Dach hohl statt massiv.</strong> Die Dachhaut ist innen auf 2 mm ausgedünnt; drei Querstege und ein Steg unter dem First halten sie stabil.</td>
-          <td class="num">376 g</td><td class="num">250 g</td>
-        </tr>
-        <tr>
-          <td><strong>Sockel im Erdgeschoss hohl.</strong> Statt einer massiven Platte von 10 mm trägt ein Raster aus Stegen eine dünne Bodenplatte von 1,2 mm.</td>
-          <td class="num">343 g</td><td class="num">294 g</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr><td>Alle drei Teile zusammen</td><td class="num">ca. 985 g</td><td class="num">ca. 820 g</td></tr>
-      </tfoot>
-    </table>
-  </div>
-  <p>Damit der Slicer den hohlen Sockel nicht wieder auffüllt, sind die Stützen beim Erdgeschoss ausgeschaltet.</p>
-  <p class="small">Die Druckdaten wurden mit Hilfe des Sprachmodells (LLM) Claude erzeugt und Schritt für Schritt verbessert. Die Gewichte und Zeiten sind Werte aus dem Slicer.</p>
+  <p class="small">Die Druckdaten wurden mit Hilfe des Sprachmodells (LLM) Claude erzeugt und Schritt für Schritt verbessert.</p>
 
   <h2>Blender-Dateien</h2>
   <div class="note">
