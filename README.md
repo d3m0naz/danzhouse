@@ -23,3 +23,4 @@
 | `3D/Bambu_Lab_P1S/` | Druckset 1:60 mit Terrasse |
 | `3D/Bambu_Lab_A2L/`, `Haus_M1-50_A2L.stl` | älteres Druckset 1:50, wird nicht mehr gepflegt |
 | `3D/pruefe_druckteile.py` | prüft die Druckteile eines Sets: Topologie, Wandstärke, Stifte und Löcher ([Aufruf](DOKUMENTATION.md#druckteile-prüfen)) |
+| `3D/druckanleitung.py` | erzeugt die Druckanleitung eines Sets als PDF ([Aufruf](DOKUMENTATION.md#druckanleitungen-erzeugen)) |

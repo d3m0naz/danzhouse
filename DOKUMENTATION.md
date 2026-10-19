@@ -87,7 +87,7 @@ Im Ordner `3D/Bambu_Lab_P1S_ohne_Terrasse/` liegt zusätzlich `Haus_M1-60_P1S_Pr
 | Erdgeschoss | 201 × 177 × 60 mm | 8 h 55 min | 294 g |
 | Obergeschoss | 201 × 160 × 48 mm | 9 h 01 min | 277 g |
 | Dach | 209 × 174 × 81 mm | 9 h 13 min | 246 g |
-| Zusammen | Höhe ca. 19 cm | ca. 27 h | ca. 820 g |
+| Zusammen | Höhe ca. 18 cm | ca. 27 h | ca. 820 g |
 
 Einstellungen der Projektdatei:
 
@@ -122,10 +122,20 @@ python3 3D/pruefe_druckteile.py 3D/Bambu_Lab_P1S_ohne_Terrasse/Haus_M1-60_*.stl
 
 Das Skript braucht numpy, trimesh und rtree und ist mit Python 3.14 getestet.
 
+### Druckanleitungen erzeugen
+
+`3D/druckanleitung.py` erzeugt die Druckanleitung eines Sets als PDF. Maße, Druckzeiten und Material liest es aus den STL-Dateien und der geslicten Projektdatei, die Bilder rendert Blender. Nach einer Änderung an den Teilen oder einem neuen Slicen genügt ein neuer Lauf:
+
+```
+python3 3D/druckanleitung.py 1-60
+python3 3D/druckanleitung.py 1-90
+```
+
+Das Skript braucht reportlab, pillow und trimesh, `blender` im Pfad und die Schrift Arial (macOS).
+
 ## Bekannte Einschränkungen
 
 - Das Bild im README stammt vom 04.10.2026 und zeigt noch die alte Haustür.
 - Das Druckset mit Terrasse hat keine Projektdatei für Bambu Studio.
 - Die Wandschränke im Obergeschoss sind im Text der Druckanleitungen nicht erwähnt.
-- Die Druckanleitung 1:60 nennt noch die Druckzeiten vor der Verstärkung vom 19.10.2026 (Dach 9 h 37 min / 251 g, OG 8 h 56 min / 275 g, zusammen 27,5 h).
 - Das Set 1:90 wurde am 18.10.2026 aus den 1:60-Teilen vor der Verstärkung erzeugt. Ein neuer Lauf von `erzeuge_1-90.py` würde die verstärkten Teile verwenden.
