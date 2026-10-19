@@ -1,6 +1,6 @@
 # Dokumentation Hausmodell
 
-Stand: 12.10.2026
+Stand: 19.10.2026
 
 ## Überblick
 
